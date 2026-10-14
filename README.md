@@ -1,4 +1,4 @@
-# Hyderabad Home Price Studio
+# Hyderabad House Price Prediction Model
 
 A local Streamlit machine-learning project that estimates a property price from the Hyderabad housing CSV supplied for this project.
 
