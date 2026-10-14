@@ -1,0 +1,34 @@
+{
+  "source_rows": 2518,
+  "exact_duplicate_rows_removed": 520,
+  "invalid_rows_removed": 0,
+  "training_rows": 1998,
+  "locations": 243,
+  "amenity_code_note": "0=No, 1=Yes, 9=Not specified; 9 was preserved as its own category.",
+  "evaluation": "Nested 5-fold cross-validation; each outer training fold selected between two models using 3-fold CV.",
+  "selection_metric": "Mean absolute error (MAE), measured in the dataset's price values.",
+  "nested_cv_mae": 1869653.58,
+  "nested_cv_rmse": 4832652.05,
+  "nested_cv_r2": 0.7252,
+  "median_baseline_mae": 5036746.24,
+  "model_selection_cv_mae": {
+    "Ridge": 2754895.64,
+    "ExtraTrees": 1865396.96
+  },
+  "selected_model": "ExtraTrees",
+  "selected_model_label": "Extra Trees ensemble",
+  "outer_fold_selected_models": [
+    "ExtraTrees",
+    "ExtraTrees",
+    "ExtraTrees",
+    "ExtraTrees",
+    "ExtraTrees"
+  ],
+  "price_display": "\u20b9 inferred from the Hyderabad, India dataset context; the raw CSV does not declare a currency code.",
+  "limitations": [
+    "Source rows have no collection date, so this is not a current-market guarantee.",
+    "The data has no bathroom count or PIN code; neither is part of the model.",
+    "Exact duplicate rows were removed before training.",
+    "CV measures performance on held-out rows drawn from the same dataset; it is not a confidence interval or guarantee for a particular home."
+  ]
+}
