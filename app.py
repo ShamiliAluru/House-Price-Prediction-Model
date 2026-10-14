@@ -77,7 +77,6 @@ def metric_card(title: str, value: str) -> str:
 
 
 artifact, metrics = load_artifacts()
-st.caption("Hyderabad · Machine Learning project")
 st.title("Hyderabad Home Price Studio")
 st.markdown(
     '<p class="lede">Explore a data-based property-price estimate using the home size, bedrooms, locality, resale status, and selected amenities. The estimate learns from the supplied Hyderabad dataset; it is not a live quote or a property valuation.</p>',
